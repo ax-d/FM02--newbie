@@ -11,18 +11,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body class="page">
@@ -34,13 +22,13 @@
 
         <ul class="menu menu--header">
           <li class="menu__item">
-            <a href="#" class="link link--menu">Features</a>
+            <a href="#" class="menu__link">Features</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="link link--menu">Team</a>
+            <a href="#" class="menu__link">Team</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="link link--menu">Sign In</a>
+            <a href="#" class="menu__link">Sign In</a>
           </li>
         </ul>
       </nav>
@@ -101,11 +89,16 @@
           Fylo has improved our team productivity by an order of magnitude. Since
           making the switch our team has become a well-oiled collaboration machine.
         </p>
-
-        <h3 class="title title--card">
-          Kyle Burton
-        </h3>
-        <small class="card__occupation">Founder & CEO, Huddle</small>
+        <div class="card__owner">
+          <figure class="avatar avatar--card__owner"><img src="/img/avatar-testimonial.jpg" alt="avatar of card owner"
+              class="avatar__img"></figure>
+          <div class="card__owner__text">
+            <h3 class="title title--card__owner">
+              Kyle Burton
+            </h3>
+            <small class="card__owner__occupation">Founder & CEO, Huddle</small>
+          </div>
+        </div>
       </div>
     </aside>
 
@@ -123,7 +116,7 @@
         <form action="#" class="form form--cta">
           <input type="email" placeholder="email@example.com" aria-label="Enter your email" required
             class="form__input form__input--cta">
-            <button class="button button--cta">Get Started For Free</button>
+          <button class="button button--cta">Get Started For Free</button>
         </form>
       </div>
     </article>
@@ -131,42 +124,48 @@
   </main>
   <footer class="footer footer--page">
     <div class="container">
-      <ul class="menu menu__footer">
+      <ul class="menu menu--footer">
         <li class="menu__item">
-          <a href="#" class="link link--menu"><img src="/img/logo.svg" alt="Fylo logo" class="footer__logo"></a>
+          <a href="#" class="menu__link"><img src="/img/logo.svg" alt="Fylo logo" class="footer__logo"></a>
         </li>
-        <li class="menu__item"><a href="#" class="link link--menu"> Phone: +1-543-123-4567</a></li>
-        <li class="menu__item"><a href="#" class="link link--menu">example@fylo.com</a></li>
+        <li class="menu__item"><a href="#" class="menu__link menu__link--phone">Phone: +1-543-123-4567</a></li>
+        <li class="menu__item"><a href="#" class="menu__link menu__link--email">example@fylo.com</a></li>
 
       </ul>
 
       <ul class="menu menu--footer">
         <li class="menu__item">
-          <a href="#" class="link link--menu">About Us</a>
+          <a href="#" class="menu__link">About Us</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link--menu">Jobs</a>
+          <a href="#" class="menu__link">Jobs</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link--menu">Press</a>
+          <a href="#" class="menu__link">Press</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link--menu">Blog</a>
+          <a href="#" class="menu__link">Blog</a>
         </li>
       </ul>
 
       <ul class="menu menu--footer">
-        <li class="menu__item"><a href="#" class="link link--menu">Contact Us</a></li>
-        <li class="menu__item"><a href="#" class="link link--menu">Terms</a></li>
-        <li class="menu__item"><a href="#" class="link link--menu">Privacy</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Terms</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">Privacy</a></li>
+      </ul>
+
+      <ul class="menu menu--footer menu--social">
+        <li class="menu__item"><a href="#" class="menu__link"><img src="/img/facebook.svg" alt="Link to facebook" class="social__img"></a></li>
+        <li class="menu__item"><a href="#" class="menu__link"><img src="/img/twitter.svg" alt="Link to twitter" class="social__img"></a></li>
+        <li class="menu__item"><a href="#" class="menu__link"><img src="/img/instagram.svg" alt="Link to instagram" class="social__img"></a></li>
       </ul>
 
       <div class="attribution">
         <p class="attribution__text">
           Challenge by <a
             href="https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5"
-            target="_blank" class="attribution__link">Frontend Mentor</a>.
-          Coded by <a href="#" class="attribution__link">AX-d</a>.
+            target="_blank" class="menu__link attribution__link">Frontend Mentor</a>.
+          Coded by <a href="#" class="menu__link attribution__link">AX-d</a>.
         </p>
       </div>
   </footer>
