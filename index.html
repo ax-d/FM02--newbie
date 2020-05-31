@@ -22,13 +22,13 @@
 
         <ul class="menu menu--header">
           <li class="menu__item">
-            <a href="#" class="menu__link">Features</a>
+            <a href="#" class="link menu__link">Features</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Team</a>
+            <a href="#" class="link menu__link">Team</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Sign In</a>
+            <a href="#" class="link menu__link">Sign In</a>
           </li>
         </ul>
       </nav>
@@ -41,21 +41,23 @@
         <figure class="illustration illustration--hero">
           <img src="/img/illustration-1.svg" alt="People putting files in a folder" class="illustration__img">
         </figure>
-        <h1 class=" title title--hero">
-          All your files in one secure location, accessible anywhere.
-        </h1>
+        <div class="flex-group">
+          <h1 class=" title title--hero">
+            All your files in one secure location, accessible anywhere.
+          </h1>
 
-        <p class="text text--hero">
-          Fylo stores your most important files in one secure location.
-          Access them wherever you need, share and collaborate with friends,
-          family, and co-workers.
-        </p>
+          <p class="text text--hero">
+            Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
 
-        <form action="#" class="form form--hero">
-          <input type="email" placeholder="Enter your email..." aria-label="Enter your email" required
-            class="form__input form__input--hero">
-          <button class="button button--hero">Get Started</button>
-        </form>
+          <form action="#" class="form form--hero">
+            <input type="email" placeholder="Enter your email..." aria-label="Enter your email" required
+              class="form__input form__input--hero">
+            <button class="button button--hero">Get Started</button>
+          </form>
+        </div>
       </div>
     </article>
 
@@ -65,54 +67,56 @@
         <figure class="illustration illustration--productivity">
           <img src="/img/illustration-2.svg" alt="People working at different locations" class="illustration__img">
         </figure>
-        <h2 class="title title--productivity">
-          Stay productive, wherever you are
-        </h2>
+        <div class="flex-group">
+          <h2 class="title title--productivity">
+            Stay productive, wherever you are
+          </h2>
 
-        <p class="text text--productivity">
-          Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.
-        </p>
+          <p class="text text--productivity">
+            Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.
+          </p>
 
-        <p class="text text--productivity">
-          Securely share files and folders with friends, family and colleagues for
-          live collaboration. No email attachments required!
-        </p>
+          <p class="text text--productivity">
+            Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!
+          </p>
 
-        <a href="#" class="link link--productivity">See how Fylo works</a>
-      </div>
-    </article>
+          <a href="#" class="link link--productivity">See how Fylo works</a>
 
-    <aside class="card">
-      <div class="container">
-        <p class="text text--card">
-          Fylo has improved our team productivity by an order of magnitude. Since
-          making the switch our team has become a well-oiled collaboration machine.
-        </p>
-        <div class="card__owner">
-          <figure class="avatar avatar--card__owner"><img src="/img/avatar-testimonial.jpg" alt="avatar of card owner"
-              class="avatar__img"></figure>
-          <div class="card__owner__text">
-            <h3 class="title title--card__owner">
-              Kyle Burton
-            </h3>
-            <small class="card__owner__occupation">Founder & CEO, Huddle</small>
-          </div>
+          <aside class="card">
+            <div class="container">
+              <p class="text text--card">
+                Fylo has improved our team productivity by an order of magnitude. Since
+                making the switch our team has become a well-oiled collaboration machine.
+              </p>
+              <div class="card__owner">
+                <figure class="avatar avatar--card__owner"><img src="/img/avatar-testimonial.jpg"
+                    alt="avatar of card owner" class="avatar__img"></figure>
+                <div class="card__owner__text">
+                  <h3 class="title title--card__owner">
+                    Kyle Burton
+                  </h3>
+                  <small class="card__owner__occupation">Founder & CEO, Huddle</small>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
       </div>
-    </aside>
-
+    </article>
     <article class="cta">
       <div class="container">
-        <h2 class="title title--cta">
-          Get early access today
-        </h2>
+        <div class="flex-group">
+          <h2 class="title title--cta">
+            Get early access today
+          </h2>
 
-        <p class="text text--cta">
-          It only takes a minute to sign up and our free starter tier is extremely generous.
-          If you have any questions, our support team would be happy to help you.
-        </p>
-
+          <p class="text text--cta">
+            It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
         <form action="#" class="form form--cta">
           <input type="email" placeholder="email@example.com" aria-label="Enter your email" required
             class="form__input form__input--cta">
@@ -124,42 +128,45 @@
   </main>
   <footer class="footer footer--page">
     <div class="container">
-      <ul class="menu menu--footer">
-        <li class="menu__item">
-          <a href="#" class="menu__link"><img src="/img/logo.svg" alt="Fylo logo" class="footer__logo"></a>
-        </li>
-        <li class="menu__item"><a href="#" class="menu__link menu__link--phone">Phone: +1-543-123-4567</a></li>
-        <li class="menu__item"><a href="#" class="menu__link menu__link--email">example@fylo.com</a></li>
+      <a href="#" class="link link--logo"><img src="/img/logo.svg" alt="Fylo logo" class="footer__logo"></a>
+      <div class="flex-group">
 
-      </ul>
+        <ul class="menu menu--footer">
+          <li class="menu__item"><a href="#" class="link menu__link menu__link--phone">Phone: +1-543-123-4567</a></li>
+          <li class="menu__item"><a href="#" class="link menu__link menu__link--email">example@fylo.com</a></li>
 
-      <ul class="menu menu--footer">
-        <li class="menu__item">
-          <a href="#" class="menu__link">About Us</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Jobs</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Press</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link">Blog</a>
-        </li>
-      </ul>
+        </ul>
 
-      <ul class="menu menu--footer">
-        <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Terms</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Privacy</a></li>
-      </ul>
+        <ul class="menu menu--footer">
+          <li class="menu__item">
+            <a href="#" class="link menu__link">About Us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__link">Jobs</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__link">Press</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="link menu__link">Blog</a>
+          </li>
+        </ul>
 
-      <ul class="menu menu--footer menu--social">
-        <li class="menu__item"><a href="#" class="menu__link"><img src="/img/facebook.svg" alt="Link to facebook" class="social__img"></a></li>
-        <li class="menu__item"><a href="#" class="menu__link"><img src="/img/twitter.svg" alt="Link to twitter" class="social__img"></a></li>
-        <li class="menu__item"><a href="#" class="menu__link"><img src="/img/instagram.svg" alt="Link to instagram" class="social__img"></a></li>
-      </ul>
+        <ul class="menu menu--footer">
+          <li class="menu__item"><a href="#" class="link menu__link">Contact Us</a></li>
+          <li class="menu__item"><a href="#" class="link menu__link">Terms</a></li>
+          <li class="menu__item"><a href="#" class="link menu__link">Privacy</a></li>
+        </ul>
 
+        <ul class="menu menu--footer menu--social">
+          <li class="menu__item"><a href="#" class="link menu__link"><img src="/img/facebook.svg" alt="Link to facebook"
+                class="social__img"></a></li>
+          <li class="menu__item"><a href="#" class="link menu__link"><img src="/img/twitter.svg" alt="Link to twitter"
+                class="social__img"></a></li>
+          <li class="menu__item"><a href="#" class="link menu__link"><img src="/img/instagram.svg"
+                alt="Link to instagram" class="social__img"></a></li>
+        </ul>
+      </div>
       <div class="attribution">
         <p class="attribution__text">
           Challenge by <a
